@@ -20,7 +20,4 @@ function session_delete(){
   }
   session_destroy();
 }
-function tasi($val,$val2){
-  return $val+$val2;
-}
 ?>
