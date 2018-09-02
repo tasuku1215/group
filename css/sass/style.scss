@@ -1,0 +1,18 @@
+@charset "utf-8";
+// ===================================================================
+// 各SCSSファイルのインポート
+// node-sass -w --source-map true --output-style compressed sass/style.scss style.css
+// ===================================================================
+ 
+// 設定用
+@import "setting";
+ 
+// リセットCSS、フォントサイズ
+@import "reset";
+ 
+// ミックスイン、@extend、CSS3など
+@import "mixi";
+ 
+// メインスタイル - layout.scssはメイン内でインポート
+@import "main";
+ 
