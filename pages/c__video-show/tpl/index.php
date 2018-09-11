@@ -35,6 +35,55 @@ require_once "./../tpl/header.html";
                     <p>お気に入り数/999</p>
                 </div>
             </li>
+            <li>
+                <img src="video_icon/firstframe.jpg" alt="動画アイコン">
+                <div>
+                    <h3>動画名</h3>
+                    <img src="" alt="投稿者アイコン"><p>投稿者名</p>
+                    <p>お気に入り数/999</p>
+                </div>
+            </li>
+            <li>
+                <img src="video_icon/firstframe.jpg" alt="動画アイコン">
+                <div>
+                    <h3>動画名</h3>
+                    <img src="" alt="投稿者アイコン"><p>投稿者名</p>
+                    <p>お気に入り数/999</p>
+                </div>
+            </li>
+            <li>
+                <img src="video_icon/firstframe.jpg" alt="動画アイコン">
+                <div>
+                    <h3>動画名</h3>
+                    <img src="" alt="投稿者アイコン"><p>投稿者名</p>
+                    <p>お気に入り数/999</p>
+                </div>
+            </li>
+            <li>
+                <img src="video_icon/firstframe.jpg" alt="動画アイコン">
+                <div>
+                    <h3>動画名</h3>
+                    <img src="" alt="投稿者アイコン"><p>投稿者名</p>
+                    <p>お気に入り数/999</p>
+                </div>
+            </li>
+            <li>
+                <img src="video_icon/firstframe.jpg" alt="動画アイコン">
+                <div>
+                    <h3>動画名</h3>
+                    <img src="" alt="投稿者アイコン"><p>投稿者名</p>
+                    <p>お気に入り数/999</p>
+                </div>
+            </li>
+            <li>
+                <img src="video_icon/firstframe.jpg" alt="動画アイコン">
+                <div>
+                    <h3>動画名</h3>
+                    <img src="" alt="投稿者アイコン"><p>投稿者名</p>
+                    <p>お気に入り数/999</p>
+                </div>
+            </li>
+
         </ul>
     </div>
 </div>
