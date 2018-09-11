@@ -97,44 +97,12 @@ require_once "./../tpl/header.html";
                     カード裏面の下3桁のコード <br>
                     (AMEXは表面のクレジットカード番号の右上4桁)</td>
                 </tr>
-            </table>
-
-            <h3>入力情報確認</h3>
-            <table>
-                <tr>
-                    <th>名前(カタカナ)</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>ニックネーム</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>ご希望会員ID</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>ご希望会員PASS</th>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <th>住まい</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>電話番号(ハイフン無し)</th>
-                    <td></td>
-                </tr>
-                <tr>
-                <th>メールアドレス<br>確認用メールアドレス</th>
-                <td></td>
-                </tr>                
                 <tr>
                         <td><button>確認</button></td>
                 </tr>
-
             </table>
+            
+
         </div>
     </div>
 </div>
