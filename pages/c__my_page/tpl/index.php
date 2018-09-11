@@ -16,7 +16,7 @@ require_once "./../tpl/header.html";
   <div id="profile_contents">
     <div id="profile_info">
       <div id="profile_img"></div>
-      <div id="user_name"alt="ユーザーネーム"">
+      <div id="user_name"alt="ユーザーネーム">
         <button type="button" name="change" value="" alt="変更">
           <font size="5" color="#333399">変更</font>
         </button>

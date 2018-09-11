@@ -43,6 +43,37 @@ require_once "./../tpl/header.html";
                     <p>消去</p>
                 </div>
             </li>
+            <li>
+                <img src="video_icon/firstframe.jpg" alt="動画アイコン">
+                <div>
+                    <h3>動画名</h3>
+                    <p>お気に入り数/999</p>
+                    <p>当が再生回数/999</p>
+                    <p>投稿時間/99:99</p>
+                    <p>消去</p>
+                </div>
+            </li>
+            <li>
+                <img src="video_icon/firstframe.jpg" alt="動画アイコン">
+                <div>
+                    <h3>動画名</h3>
+                    <p>お気に入り数/999</p>
+                    <p>当が再生回数/999</p>
+                    <p>投稿時間/99:99</p>
+                    <p>消去</p>
+                </div>
+            </li>
+            <li>
+                <img src="video_icon/firstframe.jpg" alt="動画アイコン">
+                <div>
+                    <h3>動画名</h3>
+                    <p>お気に入り数/999</p>
+                    <p>当が再生回数/999</p>
+                    <p>投稿時間/99:99</p>
+                    <p>消去</p>
+                </div>
+            </li>
+
         </ul>
     </div>
 </div>
