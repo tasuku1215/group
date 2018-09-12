@@ -1,6 +1,9 @@
 <?php
 // ヘッダーHTML呼び出し
   require_once './tpl/header.html';
+  require_once './tpl/main_up_menu.html';
+  require_once './tpl/left_menu.html';
+
   ?>
   <a href="./pages/c__channel-page/index.php">c__channel-page</a>
   <br>

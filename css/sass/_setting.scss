@@ -5,11 +5,11 @@
  
  
 // HTML5の場合は値を「false」から「true」にする
-$use_html5: false;
+$use_html5 : true;
  
  
 // 汎用クラスを使用するか
-$use_extend_object: true;
+$use_extend_object : true;
  
 	// 簡易ロールオーバーの値
 	$opacity_value: .55;
@@ -28,15 +28,18 @@ $base_font_ie: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
  
  
 // ページ全体の横幅
-$base_width: 940px;
+$base_width: 100%;
  
  
 // 要素の基本下マージン
-$base_margin_bottom: 15px;
+$base_margin: 20px;
+
+//要素基本padding
+$base_padding : 10px;
  
  
 // メインカラー（ベースカラー）
-$main_color: #fff;
+$main_color: #242838;
  
 // サブカラー
 $sub_color: #eee;

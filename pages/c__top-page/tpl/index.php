@@ -9,6 +9,7 @@
 require_once "./../tpl/header.html";
 ?>
 <div class="c__main">
+    
 
 </div>
 <?php
