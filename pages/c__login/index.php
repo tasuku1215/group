@@ -5,4 +5,6 @@
   require_once './../../func/func.php';
   // テンプレート呼び出し
   require_once './tpl/index.php';
+  // フッターHTML呼び出し
+
 ?>

@@ -3,7 +3,7 @@
 // 各SCSSファイルのインポート
 // node-sass -w --source-map true --output-style compressed sass/style.scss style.css
 // ===================================================================
- 
+
 // 設定用
 @import "setting";
  
@@ -15,9 +15,5 @@
  
 // メインスタイル - layout.scssはメイン内でインポート
 @import "main";
-
 //ヘッダーフッダーメニューのstyle
 @import "layout";
-
-
- 

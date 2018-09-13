@@ -16,6 +16,9 @@
 //確認用口座番号を入力してください
 //====================================================
 require_once "./../tpl/header.html";
+require_once './../../tpl/main_up_menu.html';
+require_once './../../tpl/left_menu.html';
+
 ?>
 <div class="c__main">
 
@@ -33,7 +36,6 @@ require_once "./../tpl/header.html";
                         <td><button>次へ</button></td>
                     </tr>
                 </table>
-
             </form>
         </div>
         <div class="step1-2">

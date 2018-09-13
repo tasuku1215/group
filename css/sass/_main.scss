@@ -3,7 +3,39 @@
 // メイン - このファイルにメインコンテンツ部分のスタイルをガツガツ書いていく。
 // ===================================================================
 body{
-    width: 100%;
     font-size : 10px;
-    background: black;
+    
+}
+
+// ===================================================================
+// ログイン画面
+// ===================================================================
+
+.c__main-box{
+    position   : absolute;
+    top        : 0;
+    bottom     : 0;
+    left       : 0;
+    right      : 0;
+    margin     : auto; 
+    line-height: 40px;
+    padding    : 50px;
+    text-align : center;
+    width      : 400px;
+    height     : 300px;
+    border     : solid 1px $font_color;
+    border-radius : 5px;
+    
+    >form{
+        font-size   : 15px;
+        >input[type="text"]{
+            width    : 300px;
+        }
+        >p{
+            >b{
+                font-size   : 20px;
+            }
+        }
+    }
+
 }

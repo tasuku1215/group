@@ -10,7 +10,7 @@ html {
 }
 body {
 	line-height: 1;
-	color: #000;
+	color: $base_text_color;
 }
  
 @if $use_html5 {
