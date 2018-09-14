@@ -20,4 +20,20 @@ function session_delete(){
   }
   session_destroy();
 }
+// ログインID、PASS検証あっていればTRUE
+function login($id,$pass,$dbLink){
+  $sql="select count(*) from login where login_id = '".$_GET['id']."' and pass = '".$_GET['pass']."'";
+  $result=mysqli_query($link,$sql);
+  if($result){
+    if(mysqli_fetch_assoc($result)['count(*)']==1){
+      return true;
+    }
+  }
+  return false;
+  mysqli_close($link);
+}
+// ファイルアップロード
+function file($path){
+  move_uploaded_file($_FILES['up_file']['tmp_name'],$path);
+}
 ?>
