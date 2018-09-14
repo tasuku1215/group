@@ -126,6 +126,10 @@ body {
     .c__main-box > form > p > b {
       font-size: 20px; }
 
+body {
+  font-size: 10px;
+  display: flex; }
+
 .c__main_up_menu {
   background: #242838;
   width: 100%;
@@ -155,6 +159,7 @@ body {
     right: 10%; }
 
 .c__left_menu {
+  margin-top: 20px;
   background: #242838;
   width: 150px;
   height: 100%;
@@ -191,7 +196,6 @@ footer {
   bottom: 0px; }
 
 .c__main {
-  margin-left: 150px;
   margin-top: 20px;
   width: 88.8%;
   height: 630px;
