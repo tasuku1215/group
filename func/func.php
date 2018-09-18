@@ -33,7 +33,7 @@ function login($id,$pass,$dbLink){
   mysqli_close($link);
 }
 // ファイルアップロード
-function file($path){
+function filePath($path){
   move_uploaded_file($_FILES['up_file']['tmp_name'],$path);
 }
 ?>
