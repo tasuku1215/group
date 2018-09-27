@@ -44,3 +44,96 @@ body{
 // 動画再生画面
 // ===================================================================
 
+#upload_portbox_box{
+  width: 800px;
+  position: absolute;
+  background-color: #666666;
+  left: 300px;
+  h2{
+    font-size: 30px;
+    font-family: $base_font;
+  }
+   h3{
+     padding:auto;
+     color: #800080;
+   }
+  
+   td{
+    text-align: center;
+    vertical-align: middle;   
+   }
+   .aline-middle{
+    text-align: center;
+    vertical-align: middle;   
+   }
+   input{
+     width: 100%;
+     height :30px;
+     border-radius: 25px;
+   }
+   textarea{
+     width: 100%;
+    border-radius: 30px;
+   }
+   table{
+     width: 600px;
+    height: 471px;
+    margin:auto;
+   }
+} 
+
+  .heding{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .form-select {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 38px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .form-select:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+
+  }
+  
+  .form-select select {
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 0 10px;
+    border: none;
+    position: relative;
+  }
+  // IE９対策
+  .form-select select:not(:target) {
+    width: 120% \9;
+  }
+
+  #upload_buttun button {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: $accent_color;
+  }
+  #upload_buttun button:hover {
+    color: antiquewhite;
+  }
+  #upload_buttun {
+    width: 30px;
+    margin: auto;
+  }
