@@ -1,110 +1,183 @@
-/* Reset Style */
-html {
-  overflow-y: scroll; }
-
+﻿html {
+  overflow-y: scroll;
+}
 body {
   line-height: 1;
-  color: #c9c9c9; }
-
-/* html5doctor.com Reset Stylesheet v1.6.1
-Last Updated: 2010-09-17 Author: Richard Clark - http://richclarkdesign.com Twitter: @rich_clark */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+  color: #c9c9c9;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
+  background: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 nav ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
-
+  background: transparent;
+}
 ins {
   background-color: #ff9;
   color: #000;
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 del {
-  text-decoration: line-through; }
-
-abbr[title], dfn[title] {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
   border-bottom: 1px dotted;
-  cursor: help; }
-
+  cursor: help;
+}
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
-
+  border-spacing: 0;
+}
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
-  padding: 0; }
-
-input, select {
-  vertical-align: middle; }
-
-/* YUI 3.4.1 (build 4118) Copyright 2011 Yahoo! Inc. All rights reserved.
-Licensed under the BSD License. http://yuilibrary.com/license/ */
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
 body {
-  font: 13px/1.231 arial,helvetica,clean,sans-serif;
+  font: 13px/1.231 arial, helvetica, clean, sans-serif;
   *font-size: small;
-  *font: x-small; }
-
-select, input, button, textarea {
-  font: 99% arial,helvetica,clean,sans-serif; }
-
+  *font: x-small;
+}
+select,
+input,
+button,
+textarea {
+  font: 99% arial, helvetica, clean, sans-serif;
+}
 table {
   font-size: inherit;
-  font: 100%; }
-
-pre, code, kbd, samp, tt {
+  font: 100%;
+}
+pre,
+code,
+kbd,
+samp,
+tt {
   font-family: monospace;
   *font-size: 108%;
-  line-height: 100%; }
-
+  line-height: 100%;
+}
 body {
-  font-size: 10px; }
-
+  font-size: 10px;
+}
 .c__main-box {
   position: absolute;
   top: 0;
@@ -118,18 +191,110 @@ body {
   width: 400px;
   height: 300px;
   border: solid 1px #ff046c;
-  border-radius: 5px; }
-  .c__main-box > form {
-    font-size: 15px; }
-    .c__main-box > form > input[type="text"] {
-      width: 300px; }
-    .c__main-box > form > p > b {
-      font-size: 20px; }
-
+  border-radius: 5px;
+}
+.c__main-box > form {
+  font-size: 15px;
+}
+.c__main-box > form > input[type="text"] {
+  width: 300px;
+}
+.c__main-box > form > p > b {
+  font-size: 20px;
+}
+#upload_portbox_box {
+  width: 800px;
+  position: absolute;
+  background-color: #666666;
+  left: 300px;
+}
+#upload_portbox_box h2 {
+  font-size: 30px;
+  font-family: "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic",
+    Sans-Serif;
+}
+#upload_portbox_box h3 {
+  padding: auto;
+  color: #800080;
+}
+#upload_portbox_box td {
+  text-align: center;
+  vertical-align: middle;
+}
+#upload_portbox_box .aline-middle {
+  text-align: center;
+  vertical-align: middle;
+}
+#upload_portbox_box input {
+  width: 100%;
+  height: 30px;
+  border-radius: 25px;
+}
+#upload_portbox_box textarea {
+  width: 100%;
+  border-radius: 30px;
+}
+#upload_portbox_box table {
+  width: 600px;
+  height: 471px;
+  margin: auto;
+}
+.heding {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-select {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 38px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.form-select:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+}
+.form-select select {
+  width: 100%;
+  height: 35px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 0 10px;
+  border: none;
+  position: relative;
+}
+.form-select select:not(:target) {
+  width: 120% \9;
+}
+#upload_buttun button {
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  background-color: #e73562;
+}
+#upload_buttun button:hover {
+  color: antiquewhite;
+}
+#upload_buttun {
+  width: 30px;
+  margin: auto;
+}
 body {
   font-size: 10px;
-  display: flex; }
-
+  display: flex;
+}
 .c__main_up_menu {
   background: #242838;
   width: 100%;
@@ -137,27 +302,31 @@ body {
   z-index: 9999;
   position: fixed;
   top: 0px;
-  left: 0px; }
-  .c__main_up_menu > .text_input {
-    z-index: 9999;
-    position: fixed;
-    right: 30%; }
-  .c__main_up_menu > .menu_button > div {
-    background: #e73562;
-    text-align: center;
-    line-height: 20px;
-    width: 70px;
-    height: 20px;
-    z-index: 9999;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    margin: 0px 5px; }
-  .c__main_up_menu > .menu_button div:nth-child(2) {
-    right: 5%; }
-  .c__main_up_menu > .menu_button div:nth-child(3) {
-    right: 10%; }
-
+  left: 0px;
+}
+.c__main_up_menu > .text_input {
+  z-index: 9999;
+  position: fixed;
+  right: 30%;
+}
+.c__main_up_menu > .menu_button > div {
+  background: #e73562;
+  text-align: center;
+  line-height: 20px;
+  width: 70px;
+  height: 20px;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  margin: 0px 5px;
+}
+.c__main_up_menu > .menu_button div:nth-child(2) {
+  right: 5%;
+}
+.c__main_up_menu > .menu_button div:nth-child(3) {
+  right: 10%;
+}
 .c__left_menu {
   margin-top: 20px;
   background: #242838;
@@ -167,24 +336,27 @@ body {
   position: fixed;
   top: 20px;
   bottom: 20px;
-  left: 0px; }
-  .c__left_menu > h1 {
-    width: 150px;
-    height: 150px;
-    background: #e73562;
-    margin: 0 auto; }
-  .c__left_menu > .info {
-    background: #a1a1a1;
-    color: #242838;
-    position: fixed;
-    bottom: 20px;
-    width: 150px;
-    font-size: 15px; }
-  .c__left_menu > div > li {
-    width: 150px;
-    color: #ff046c;
-    height: 50px; }
-
+  left: 0px;
+}
+.c__left_menu > h1 {
+  width: 150px;
+  height: 150px;
+  background: #e73562;
+  margin: 0 auto;
+}
+.c__left_menu > .info {
+  background: #a1a1a1;
+  color: #242838;
+  position: fixed;
+  bottom: 20px;
+  width: 150px;
+  font-size: 15px;
+}
+.c__left_menu > div > li {
+  width: 150px;
+  color: #ff046c;
+  height: 50px;
+}
 footer {
   color: #ff046c;
   width: 100%;
@@ -193,12 +365,13 @@ footer {
   height: 20px;
   z-index: 9999;
   position: fixed;
-  bottom: 0px; }
-
+  bottom: 0px;
+}
 .c__main {
   margin-top: 20px;
   width: 88.8%;
   height: 630px;
-  position: relative; }
+  position: relative;
+}
 
 /*# sourceMappingURL=style.css.map */
