@@ -13,12 +13,12 @@ require_once './../../tpl/left_menu.html';
 <div class="c__main">
 <div id="upload_portbox_box">
   <!---ディレクトリ表示 -->
-  <div id="directory_box">
+  <div class="directory_box">
    <a href="#" class="square_btn">TOPページ</a>
    <a href="#" class="square_btn">チャンネル登録</a>
    </div>
   <form action="#">
-     <div class="heding"> <h2>動画投稿</h2></div>
+  <div class="header_font"> <h2>動画投稿</h2></div>
       <table>
         <tr>
           <th class ="aline-middle" width="200" style="font-size : 20px;"><h3>投稿動画</h3></th>
@@ -30,7 +30,7 @@ require_once './../../tpl/left_menu.html';
           <th class ="aline-middle" style="font-size : 20px;"><h3>金額設定</h3></th>
           <td>
             <div class="form-select">
-              <select id="select-money" name="select-money">
+            <select id="select-money" name="select-money">
                 <option value=""></option>
                   <option value="money1">0</option>
                   <option value="money2" >500</option>
@@ -51,7 +51,7 @@ require_once './../../tpl/left_menu.html';
                   <option value="release2" >一般</option>
                   <option value="release3">会員</option>
               </select>
-   </div>  
+            </div>  
           </td>
         </tr>
         <tr>
