@@ -39,11 +39,14 @@ body {
 }
 
 // ===================================================================
-// 動画再生画面
+// 動画投稿画面
 // ===================================================================
 
 #upload_portbox_box {
   @include box_absolute_left;
+  .directory_box {
+    @include directory;
+  }
 
   h2 {
     font-size: 30px;
@@ -215,21 +218,39 @@ height: 1300px;
           width: 298px;
           height: 149px;
           img {
-            width: 100%;
-            height: auto;
+            width: 280px; 
+            height: 130px;
+            object-fit: contain;
           }
         }
         .video_detail {
           float: right;
           width: 500px;
           height: 150px;
-          h3 {
-            margin-top:20px; 
-            font-size: 30px;
-          }
           p{
+            float: right;
+            width: 160px;
             font-size: 20px;
+          }
+          .box_float{
+            h3 {
+              border-bottom: 1px solid darkgray;
+              text-align: center;
+              margin-top:20px; 
+              font-size: 30px;
+              width: 300px;
+            }
+            img{
+              float: left;
+              border-radius: 10px;
+              height: 20px;
+              width: 20px;
+            }
+            p{
+              width: 300px;
+              float: left;
 
+            }
           }
         }
       }
