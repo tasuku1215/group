@@ -183,6 +183,7 @@ body {
         }
       }
     }
+    // 紹介　表示
     #profile_text {
       height: 150px;
       width: 650px;
@@ -199,6 +200,7 @@ body {
     }
     // マイリストヘッダーカラー
     #mylist_box {
+      height: 800px;
       .back_grond {
         height: 40px;
         background-color: $accent_color;
@@ -226,13 +228,58 @@ body {
   }
   #top_box {
     margin-top: 70px;
-    // 
+    // 動画一覧
     .top_video_list {
       @include video_thumbnail;
       li{
         border-top: 1px solid darkgray;
       }
     }
-  
+  }
+}
+// ===================================================================
+// 動画視聴ページ
+// ===================================================================
+#p__video_box{
+  @include box_absolute_left;
+ 
+  .directory_box{
+    @include directory;
+  }
+  .p__viedo_show-main{
+    .p__video_center{
+      width: 750px;
+      margin: auto;
+    }
+  }
+  .p__video_description{
+    height: 200px;
+    h2{
+      font-size: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid darkgray;
+    }
+    img {
+      float: left;
+      border-radius: 10px;
+      height: 20px;
+      width: 20px;
+    }
+    h3 {
+      font-size: 20px;
+      width: 300px;
+      float: left;
+    }
+    p{
+      font-size: 15px;
+      clear: both;
+    }
+  }
+  .p__video_list {
+    @include video_thumbnail;
+    li{
+      border-top: 1px solid darkgray;
+    }
   }
 }
