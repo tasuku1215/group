@@ -80,10 +80,6 @@ body {
   }
 }
 
-.header_font {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 .form-select {
   display: block;
   position: relative;
@@ -144,7 +140,7 @@ body {
 
 #my_peage_box {
   @include box_absolute_left;
-height: 1300px;
+  height: 1300px;
   .directory_box {
     @include directory;
   }
@@ -152,6 +148,7 @@ height: 1300px;
     width: 100px;
     float: right;
   }
+  // profile 
   #profile_contents {
     #profile_info {
       height: 200px;
@@ -166,6 +163,7 @@ height: 1300px;
         float: right;
         height: 150px;
         width: 600px;
+        // アカウント
         h4 {
           float: left;
           font-size: 30px;
@@ -175,7 +173,6 @@ height: 1300px;
         h3 {
           clear: both;
           font-size: 40px;
-  
         }
         button {
           float: right;
@@ -186,79 +183,56 @@ height: 1300px;
         }
       }
     }
-    #profile_text{
+    #profile_text {
       height: 150px;
       width: 650px;
-      margin  : auto;
+      margin: auto;
       border: 1px solid darkgray;
     }
   }
   #mylist_contents {
-    height: 650px;
     margin-top: 70px;
-    h3{
+    // MYLIST
+    h3 {
       font-size: 40px;
-      margin-bottom:30px; 
+      margin-bottom: 30px;
     }
+    // マイリストヘッダーカラー
     #mylist_box {
       .back_grond {
         height: 40px;
         background-color: $accent_color;
       }
     }
-    .my_video_list {
-      li {
-        height: 151px;
-        border-bottom: 1px solid darkgray;
-        border-right: 1px solid darkgray;
-        border-left: 1px solid darkgray;
-       
-        .img_absolute_position{
-          float: left;
-          width: 298px;
-          height: 149px;
-          img {
-            width: 280px; 
-            height: 130px;
-            object-fit: contain;
-          }
-        }
-        .video_detail {
-          float: right;
-          width: 500px;
-          height: 150px;
-          p{
-            float: right;
-            width: 160px;
-            font-size: 20px;
-          }
-          .box_float{
-            h3 {
-              border-bottom: 1px solid darkgray;
-              text-align: center;
-              margin-top:20px; 
-              font-size: 30px;
-              width: 300px;
-            }
-            img{
-              float: left;
-              border-radius: 10px;
-              height: 20px;
-              width: 20px;
-            }
-            p{
-              width: 300px;
-              float: left;
-
-            }
-          }
-        }
-      }
-    }
-    .position_center{
+     .my_video_list {
+       @include video_thumbnail;
+     }
+    .position_center {
       width: 200px;
-      margin-top:20px; 
+      margin-top: 20px;
       margin: auto;
     }
+  }
+}
+
+// ===================================================================
+// トップページ
+// ===================================================================
+#top_contents {
+  @include box_absolute_left;
+ 
+  .directory_box{
+    @include directory;
+  }
+  #top_box {
+    margin-top: 70px;
+    // 
+    .top_video_list {
+      @include video_thumbnail;
+      li{
+        border-top: 1px solid darkgray;
+      }
+    }
+  
   }
 }
