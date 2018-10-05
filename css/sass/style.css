@@ -495,14 +495,11 @@ body {
     bottom: 20px;
     width: 150px;
     font-size: 15px; }
-  .c__left_menu > div li {
+  .c__left_menu > div > li {
     width: 150px;
     color: #ff046c;
-    height: 50px; }
-    .c__left_menu > div li > a {
-      color: #fff;
-      text-decoration: none;
-      border: solid 1px #fff; }
+    height: 50px;
+    background-color: red; }
 
 footer {
   color: #ff046c;

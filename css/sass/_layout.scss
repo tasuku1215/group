@@ -75,10 +75,17 @@ body{
         font-size  : 15px;
     }
     >div{
-        >li{
+        li{
             width    : 150px;
             color    : $font_color;
             height   : 50px;
+            >a{
+                // background-color:red;
+                color:#fff;
+                // font-size:10px;
+                text-decoration:none;
+                border:solid 1px #fff;
+            }
         }
     }
 }
