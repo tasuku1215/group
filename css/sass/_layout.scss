@@ -77,14 +77,15 @@ body{
     >div{
         li{
             width    : 150px;
-            color    : $font_color;
             height   : 50px;
+            text-align: center;
+            list-style: none;
+            font-size: 20px;
             >a{
                 // background-color:red;
-                color:#fff;
+                color:$font_color;
                 // font-size:10px;
                 text-decoration:none;
-                border:solid 1px #fff;
             }
         }
     }
