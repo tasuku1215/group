@@ -75,10 +75,18 @@ body{
         font-size  : 15px;
     }
     >div{
-        >li{
+        li{
+            list-style: none;
             width    : 150px;
-            color    : $font_color;
-            height   : 50px;
+            height   : 40px;
+            font-size: 15px;
+            text-align  : center; 
+            >a{
+                color       : $font_color; 
+                height      : 40px;
+                text-align  : center; 
+                line-height : 40px;
+            }
         }
     }
 }
