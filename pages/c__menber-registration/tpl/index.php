@@ -46,32 +46,32 @@ require_once './../../tpl/left_menu.html';
             <table>
                 <tr>
                     <th>名前(カタカナ)</th>
-                    <td></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>ニックネーム</th>
-                    <td></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>ご希望会員ID</th>
-                    <td></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>ご希望会員PASS</th>
-                    <td></td>
+                    <td><input type="text"></td>
                 </tr>
 
                 <tr>
                     <th>住まい</th>
-                    <td></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>電話番号(ハイフン無し)</th>
-                    <td></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>メールアドレス<br>確認用メールアドレス</th>
-                    <td></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <td><button>次へ</button></td>
@@ -87,15 +87,15 @@ require_once './../../tpl/left_menu.html';
             <table>
                 <tr>
                     <th>クレジットカード番号</th>
-                    <td></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>クレジットカード有効期限</th>
-                    <td></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>クレジットカードセキュリティーコード</th>
-                    <td><br>
+                    <td><input type="text"><br>
                     カード裏面の下3桁のコード <br>
                     (AMEXは表面のクレジットカード番号の右上4桁)</td>
                 </tr>
