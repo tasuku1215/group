@@ -205,7 +205,9 @@ body {
       }
     }
      .my_video_list {
-       @include video_thumbnail;
+       a{
+         @include video_thumbnail;
+       }
      }
     .position_center {
       width: 200px;
@@ -285,12 +287,17 @@ body {
   #top_box {
     margin-top: 70px;
     // 動画一覧
-    .top_video_list {
-      @include video_thumbnail;
-      li{
-        border-top: 1px solid darkgray;
+      .top_video_list {
+        a{
+            text-decoration: none;
+          @include video_thumbnail;
+          li{
+          
+            border-top: 1px solid darkgray;
+          }
+        }
       }
-    }
+    
   }
 }
 // ===================================================================
@@ -333,9 +340,11 @@ body {
     }
   }
   .p__video_list {
-    @include video_thumbnail;
-    li{
-      border-top: 1px solid darkgray;
+    a{
+      @include video_thumbnail;
+      li{
+        border-top: 1px solid darkgray;
+      }
     }
   }
 }
