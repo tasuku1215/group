@@ -48,10 +48,6 @@ body {
     @include directory;
   }
 
-  h2 {
-    font-size: 30px;
-    font-family: $base_font;
-  }
   h3 {
     padding: auto;
     color: #800080;
@@ -282,4 +278,41 @@ body {
       border-top: 1px solid darkgray;
     }
   }
+}
+
+// ===================================================================
+// 会員登録ぺージ
+// ===================================================================
+
+.step1{
+ margin       : 0 auto;
+ width        : 70%;
+ background   : #fff;
+ font-size    : 15px;
+ text-align: center;
+
+ h3{
+   font-size  : 20px;
+ }
+ table{
+   width      : 80%;
+   margin     : 10px auto;
+   tr{
+     height: 60px;
+      th{
+        width    : 300px;
+      }
+      td{
+        text-align: left;
+      }
+   }
+ }
+ .kakunin{
+   margin : 0 auto;
+   width  : 100px; 
+   >button{
+     width : 100px;
+     margin-bottom : 40px;
+   }
+ }
 }

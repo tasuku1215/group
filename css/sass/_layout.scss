@@ -6,7 +6,7 @@
 body{
     font-size : 10px;
     display   : flex;
-     
+    background: #eee;
 }
 
 //====================================================================
@@ -44,7 +44,6 @@ body{
         div:nth-child(3){
             right      : 10% ;
         }
-
     }
 }
 
@@ -110,8 +109,9 @@ footer{
 //メイン
 //====================================================================
 .c__main{
-    margin-top  : 20px;
+    margin-top  : 20px ;
     margin-left : 150px;
+    padding     : 20px;
     width       : 88.8%;
     height      : 530px;
     position    : relative;

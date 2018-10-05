@@ -23,20 +23,23 @@ require_once './../../tpl/left_menu.html';
 <div class="c__main">
 
     <h2>会員登録画面</h2>
-
     <div class="step1">
+    <form action="">
         <div class="step1-1">
             <h3>コンテンツ内情報</h3>
             <!-- JSで隠す -->
             <p>こちらの内容はコンテンツ内で利用する内容入力フォームになっております。<br>
             IDとPASSはお客様でお控えいただきますようお願いいたします。</p>
-            <form action="">
                 <table>
                     <tr>
-                        <td><button>次へ</button></td>
+                        <th>ID</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>PASS</th>
+                        <td><input type="text"></td>
                     </tr>
                 </table>
-            </form>
         </div>
         <div class="step1-2">
             <h3>お客様情報の入力</h3>
@@ -71,10 +74,7 @@ require_once './../../tpl/left_menu.html';
                 </tr>
                 <tr>
                     <th>メールアドレス<br>確認用メールアドレス</th>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td><button>次へ</button></td>
+                    <td><input type="text"> <br> <input type="text"></td>
                 </tr>
             </table>
         </div>
@@ -99,13 +99,10 @@ require_once './../../tpl/left_menu.html';
                     カード裏面の下3桁のコード <br>
                     (AMEXは表面のクレジットカード番号の右上4桁)</td>
                 </tr>
-                <tr>
-                        <td><button>確認</button></td>
-                </tr>
             </table>
-            
-
         </div>
+        <div class="kakunin"><button>確認</button></div>
+    </form>
     </div>
 </div>
 <?php
