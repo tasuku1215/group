@@ -91,7 +91,6 @@ require_once './../../tpl/left_menu.html';
                     <td><input type="text" name="credit_user" value="">
                 </tr>
                 <tr>
-                    <!-- id ユーザーID	user_id	user_name ユーザーネーム	user_pass ユーザーパスワード	user_mail ユーザーメール	user_tel ユーザー電話番号	user_msg	entry_date	del_flag -->
                     <th>クレジットカード番号</th>
                     <td><input type="text" name="credit_no" value=""></td>
                 </tr>
