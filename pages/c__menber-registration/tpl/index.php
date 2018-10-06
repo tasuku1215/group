@@ -43,7 +43,7 @@ require_once './../../tpl/left_menu.html';
             <!-- JSで隠す -->
             <p>こちらはお客様の個人情報の入力フォームになっております。<br>
             著作権などの内容を同意のいうえ会員登録を行ってください。</p>
-            <!-- id ユーザーID	user_id	user_name ユーザーネーム	user_pass ユーザーパスワード	user_mail ユーザーメール	user_tel ユーザー電話番号	user_msg	entry_date	del_flag -->
+            <form action="./index.php" method="POST">
             <table>
                 <tr>
                     <th>名前(カタカナ)</th>
@@ -59,20 +59,20 @@ require_once './../../tpl/left_menu.html';
                 </tr>
                 <tr>
                     <th>ご希望会員PASS</th>
-                    <td><input type="text" name="" value=""></td>
+                    <td><input type="password" name="user_pass" value=""></td>
                 </tr>
-
-                <tr>
+                
+                <!-- <tr>
                     <th>住まい</th>
                     <td><input type="text" name="" value=""></td>
-                </tr>
+                </tr> -->
                 <tr>
                     <th>電話番号(ハイフン無し)</th>
-                    <td><input type="text" name="" value=""></td>
+                    <td><input type="text" name="user_tel" value=""></td>
                 </tr>
                 <tr>
                     <th>メールアドレス<br>確認用メールアドレス</th>
-                    <td><input type="text" name="" value=""></td>
+                    <td><input type="text" name="user_mail" value=""></td>
                 </tr>
                 <tr>
                     <td><button>次へ</button></td>
@@ -87,12 +87,13 @@ require_once './../../tpl/left_menu.html';
             </p>
             <table>
                 <tr>
-                    <th>クレジットカード番号</th>
-                    <td><input type="text" name="" value=""></td>
+                    <th>名義人</th>
+                    <td><input type="text" name="credit_user" value="">
                 </tr>
                 <tr>
-                    <th>クレジットカード有効期限</th>
-                    <td><input type="text" name="" value=""></td>
+                    <!-- id ユーザーID	user_id	user_name ユーザーネーム	user_pass ユーザーパスワード	user_mail ユーザーメール	user_tel ユーザー電話番号	user_msg	entry_date	del_flag -->
+                    <th>クレジットカード番号</th>
+                    <td><input type="text" name="credit_no" value=""></td>
                 </tr>
                 <tr>
                     <th>クレジットカードセキュリティーコード</th>
@@ -101,13 +102,17 @@ require_once './../../tpl/left_menu.html';
                     (AMEXは表面のクレジットカード番号の右上4桁)</td>
                 </tr>
                 <tr>
-                        <td><button>確認</button></td>
+                    <th>クレジットカード有効期限</th>
+                    <td><input type="text" name="credit_date" value=""></td>
+                </tr>
+                <tr>
+                    <td><button>確認</button></td>
                 </tr>
             </table>
-            
-
-        </div>
+        </form>
+        
     </div>
+</div>
 </div>
 <?php
 require_once "./../../tpl/footer.html";
