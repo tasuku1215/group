@@ -457,3 +457,85 @@ body {
     }
   }
 }
+// ===================================================================
+// チャンネルページ
+// ===================================================================
+.channel_box{
+  @include box_absolute_left;
+  .directory_box {
+    @include directory;
+  }
+  .header_box{
+    border: 1px solid darkgray;
+    height: 300px;
+    margin-bottom: 40px;
+    .img_roundly{
+      margin:30px;
+      float: left;
+      width: 148px;
+      height: 148px;
+      border: 1px solid darkgray;
+      border-radius: 80px;
+      img{
+        border-radius: 80px;
+      }
+    }
+    .user_detail{
+      margin-top: 30px;
+      float: left;
+      width: 150px;
+      h2{
+        font-size: 30px;
+      }
+     
+    }
+  }
+  .video_list_contents {
+  
+    // videolist
+    h3 {
+      font-size: 30px;
+      width: 300px;
+      float: left;
+      margin-bottom: 5px;
+    }
+    .video_sort{
+      height: 40px;
+      width: 200px;
+      float: right;
+      select{
+        height: 30px;
+        padding: auto;
+      }
+    }
+    // videoリストヘッダーカラー
+    .p_video_box {
+      clear: both;
+      height: 800px;
+      .back_grond {
+        height: 40px;
+        background-color: $accent_color;
+      }
+    }
+     .p_video_list {
+       a{
+         @include video_thumbnail;
+         li{
+           p{
+             clear: both;
+           }
+           button{
+             float:right;
+             width:50px;
+           }
+         }
+   
+       }
+     }
+    .position_center {
+      width: 200px;
+      margin-top: 20px;
+      margin: auto;
+    }
+  }
+}

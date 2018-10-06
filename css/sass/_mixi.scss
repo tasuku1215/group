@@ -4,9 +4,13 @@
 // ===================================================================
 // c_mainに調整
 @mixin box_absolute_left{
-
+  ul{
+    li{
+      list-style: none;
+    }
+  }
   margin: auto;
-  width: 800px;
+  width: 70%;
 }
 // input 調整
 @mixin input_radius{
