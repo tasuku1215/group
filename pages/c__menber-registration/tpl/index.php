@@ -43,35 +43,36 @@ require_once './../../tpl/left_menu.html';
             <!-- JSで隠す -->
             <p>こちらはお客様の個人情報の入力フォームになっております。<br>
             著作権などの内容を同意のいうえ会員登録を行ってください。</p>
+            <!-- id ユーザーID	user_id	user_name ユーザーネーム	user_pass ユーザーパスワード	user_mail ユーザーメール	user_tel ユーザー電話番号	user_msg	entry_date	del_flag -->
             <table>
                 <tr>
                     <th>名前(カタカナ)</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="user_name" value=""></td>
                 </tr>
                 <tr>
                     <th>ニックネーム</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="nickname" value=""></td>
                 </tr>
                 <tr>
                     <th>ご希望会員ID</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="user_id" value=""></td>
                 </tr>
                 <tr>
                     <th>ご希望会員PASS</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="" value=""></td>
                 </tr>
 
                 <tr>
                     <th>住まい</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="" value=""></td>
                 </tr>
                 <tr>
                     <th>電話番号(ハイフン無し)</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="" value=""></td>
                 </tr>
                 <tr>
                     <th>メールアドレス<br>確認用メールアドレス</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="" value=""></td>
                 </tr>
                 <tr>
                     <td><button>次へ</button></td>
@@ -87,15 +88,15 @@ require_once './../../tpl/left_menu.html';
             <table>
                 <tr>
                     <th>クレジットカード番号</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="" value=""></td>
                 </tr>
                 <tr>
                     <th>クレジットカード有効期限</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="" value=""></td>
                 </tr>
                 <tr>
                     <th>クレジットカードセキュリティーコード</th>
-                    <td><input type="text"><br>
+                    <td><input type="text" name="" value=""><br>
                     カード裏面の下3桁のコード <br>
                     (AMEXは表面のクレジットカード番号の右上4桁)</td>
                 </tr>
