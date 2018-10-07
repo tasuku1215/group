@@ -83,6 +83,10 @@ hr {
 input, select {
   vertical-align: middle; }
 
+li {
+  list-style-type: none;
+  list-style: none; }
+
 /* YUI 3.4.1 (build 4118) Copyright 2011 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License. http://yuilibrary.com/license/ */
 body {
