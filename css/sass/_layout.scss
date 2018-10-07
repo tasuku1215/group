@@ -28,6 +28,7 @@ body{
     >.menu_button{
         >div{
             background : $accent_color;
+            color      : $main_color;
             text-align : center; 
             line-height: 20px;
             width      : 70px;
@@ -94,7 +95,7 @@ body{
 //フッター
 //====================================================================
 footer{
-    color      : $font_color;
+    color      : $main_color;
     width      : $base_width;
     background : $main_color;
     text-align : center;
@@ -115,4 +116,6 @@ footer{
     width       : 88.8%;
     height      : 530px;
     position    : relative;
+    color      : $main_color;
+
 }
