@@ -65,6 +65,12 @@ require_once './../../tpl/left_menu.html';
           </td>
         </tr>
         <tr>
+          <th class ="aline-middle"><h3 style="font-size : 20px;">動画サムネイル</h3></th>
+          <td>
+            <input type="file" name="video_img">
+          </td>
+        </tr>
+        <tr>
           <!-- 動画説明 -->
           <th class ="aline-middle">
           <h3 style="font-size : 20px;">動画説明</h3>
