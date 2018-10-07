@@ -22,7 +22,7 @@ require_once './../../tpl/left_menu.html';
 ?>
 <div class="c__main">
 
-    <h2>> <a href="./"> 会員登録画面</a></h2>
+    <h2>会員登録画面</h2>
     <div class="step1">
     <form action="">
         <div class="step1-1">
