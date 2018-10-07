@@ -75,14 +75,10 @@ require_once './../../tpl/left_menu.html';
                 </tr>
                 <tr>
                     <th>メールアドレス<br>確認用メールアドレス</th>
-<<<<<<< HEAD
-                    <td><input type="text"> <br> <input type="text"></td>
-=======
-                    <td><input type="text" name="user_mail" value=""></td>
+                    <td><input type="text" name="user_mail" value=""><br><input type="text" name="user_mail2" value=""></td>
                 </tr>
                 <tr>
                     <td><button>次へ</button></td>
->>>>>>> 21c64bf29808ed6c6ec26b1fea3dff01ea0f1fb7
                 </tr>
             </table>
         </div>
@@ -107,12 +103,6 @@ require_once './../../tpl/left_menu.html';
                     カード裏面の下3桁のコード <br>
                     (AMEXは表面のクレジットカード番号の右上4桁)</td>
                 </tr>
-<<<<<<< HEAD
-            </table>
-        </div>
-        <div class="kakunin"><button>確認</button></div>
-    </form>
-=======
                 <tr>
                     <th>クレジットカード有効期限</th>
                     <td><input type="text" name="credit_date" value=""></td>
@@ -121,9 +111,10 @@ require_once './../../tpl/left_menu.html';
                     <td><button>確認</button></td>
                 </tr>
             </table>
+            </div>
+        <div class="kakunin"><button>確認</button></div>
         </form>
         
->>>>>>> 21c64bf29808ed6c6ec26b1fea3dff01ea0f1fb7
     </div>
 </div>
 </div>
