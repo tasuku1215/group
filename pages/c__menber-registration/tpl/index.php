@@ -46,35 +46,43 @@ require_once './../../tpl/left_menu.html';
             <!-- JSで隠す -->
             <p>こちらはお客様の個人情報の入力フォームになっております。<br>
             著作権などの内容を同意のいうえ会員登録を行ってください。</p>
+            <form action="./index.php" method="POST">
             <table>
                 <tr>
                     <th>名前(カタカナ)</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="user_name" value=""></td>
                 </tr>
                 <tr>
                     <th>ニックネーム</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="nickname" value=""></td>
                 </tr>
                 <tr>
                     <th>ご希望会員ID</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="user_id" value=""></td>
                 </tr>
                 <tr>
                     <th>ご希望会員PASS</th>
-                    <td><input type="text"></td>
+                    <td><input type="password" name="user_pass" value=""></td>
                 </tr>
-
-                <tr>
+                
+                <!-- <tr>
                     <th>住まい</th>
-                    <td><input type="text"></td>
-                </tr>
+                    <td><input type="text" name="" value=""></td>
+                </tr> -->
                 <tr>
                     <th>電話番号(ハイフン無し)</th>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="user_tel" value=""></td>
                 </tr>
                 <tr>
                     <th>メールアドレス<br>確認用メールアドレス</th>
+<<<<<<< HEAD
                     <td><input type="text"> <br> <input type="text"></td>
+=======
+                    <td><input type="text" name="user_mail" value=""></td>
+                </tr>
+                <tr>
+                    <td><button>次へ</button></td>
+>>>>>>> 21c64bf29808ed6c6ec26b1fea3dff01ea0f1fb7
                 </tr>
             </table>
         </div>
@@ -86,24 +94,38 @@ require_once './../../tpl/left_menu.html';
             </p>
             <table>
                 <tr>
-                    <th>クレジットカード番号</th>
-                    <td><input type="text"></td>
+                    <th>名義人</th>
+                    <td><input type="text" name="credit_user" value="">
                 </tr>
                 <tr>
-                    <th>クレジットカード有効期限</th>
-                    <td><input type="text"></td>
+                    <th>クレジットカード番号</th>
+                    <td><input type="text" name="credit_no" value=""></td>
                 </tr>
                 <tr>
                     <th>クレジットカードセキュリティーコード</th>
-                    <td><input type="text"><br>
+                    <td><input type="text" name="" value=""><br>
                     カード裏面の下3桁のコード <br>
                     (AMEXは表面のクレジットカード番号の右上4桁)</td>
                 </tr>
+<<<<<<< HEAD
             </table>
         </div>
         <div class="kakunin"><button>確認</button></div>
     </form>
+=======
+                <tr>
+                    <th>クレジットカード有効期限</th>
+                    <td><input type="text" name="credit_date" value=""></td>
+                </tr>
+                <tr>
+                    <td><button>確認</button></td>
+                </tr>
+            </table>
+        </form>
+        
+>>>>>>> 21c64bf29808ed6c6ec26b1fea3dff01ea0f1fb7
     </div>
+</div>
 </div>
 <?php
 require_once "./../../tpl/footer.html";
