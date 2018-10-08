@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: 2018 年 10 月 08 日 11:58
+-- Generation Time: 2018 年 10 月 08 日 22:57
 -- サーバのバージョン： 5.6.38
 -- PHP Version: 7.2.1
 
@@ -128,13 +128,23 @@ INSERT INTO `Users` (`id`, `user_id`, `user_name`, `user_pass`, `user_mail`, `us
 
 CREATE TABLE `video` (
   `video_id` int(128) NOT NULL,
-  `category_id` int(128) NOT NULL,
   `user_id` int(128) NOT NULL,
   `video_name` varchar(128) NOT NULL,
   `video_location` varchar(128) NOT NULL,
   `video_image` varchar(128) NOT NULL,
   `video_image_location` varchar(128) NOT NULL,
   `del_flag` int(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `video_category`
+--
+
+CREATE TABLE `video_category` (
+  `video_id` int(128) NOT NULL,
+  `category_id` int(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -229,8 +239,14 @@ ALTER TABLE `Users`
 -- Indexes for table `video`
 --
 ALTER TABLE `video`
+  ADD PRIMARY KEY (`video_id`) USING BTREE,
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `video_category`
+--
+ALTER TABLE `video_category`
   ADD PRIMARY KEY (`video_id`,`category_id`),
-  ADD KEY `user_id` (`user_id`),
   ADD KEY `category_id` (`category_id`);
 
 --
@@ -291,8 +307,14 @@ ALTER TABLE `pay_data`
 -- テーブルの制約 `video`
 --
 ALTER TABLE `video`
-  ADD CONSTRAINT `video_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users` (`id`),
-  ADD CONSTRAINT `video_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `video_categorys` (`category_id`);
+  ADD CONSTRAINT `video_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users` (`id`);
+
+--
+-- テーブルの制約 `video_category`
+--
+ALTER TABLE `video_category`
+  ADD CONSTRAINT `video_category_ibfk_1` FOREIGN KEY (`video_id`) REFERENCES `video` (`video_id`),
+  ADD CONSTRAINT `video_category_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `video_categorys` (`category_id`);
 
 --
 -- テーブルの制約 `video_mylist`
