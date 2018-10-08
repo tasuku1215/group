@@ -10,7 +10,7 @@
     <div class="text_input"><input type="text" size="100px"><button><i class="fas fa-phone"></i></button></div>
     <div class="menu_button">
         <?php 
-        session_start();
+        // session_start();
         if(!empty($_SESSION['login'])){?>
             <div> <a href=""> <i class="fas fa-phone"></i>ログアウト</a></div>
         <?php }

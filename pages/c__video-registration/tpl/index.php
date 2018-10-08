@@ -5,7 +5,7 @@
 //以下エラー文
 //
 //====================================================
-// require_once "./../../tpl/header.html";
+require_once "./../../tpl/header.html";
 require_once './../../tpl/main_up_menu.php';
 require_once './../../tpl/left_menu.html';
 
@@ -76,8 +76,7 @@ require_once './../../tpl/left_menu.html';
           <h3 style="font-size : 20px;">動画説明</h3>
           </th>
           <td>
-            <textarea name="video_msg" alt="動画説明文"rows=10 cols=50>
-            </textarea>
+            <textarea name="video_msg" alt="動画説明文"rows=10 cols=50></textarea>
           </td>
         </tr>
       </table>

@@ -3,7 +3,7 @@
   require_once './../../config.php';
   // ファンクション呼び出し
   require_once './../../func/func.php';
-  session_start();
+  // session_start();
   $credit_date=substr($_SESSION['register']["credit_date"],0,4).'年'.substr($_SESSION['register']["credit_date"],4,2).'月';
   if(!empty($_GET['state'])&&$_GET['state']=='登録'){
     $dbh=new PDO('mysql:dbname='.DB_NAME.';host='.HOST.';charset=utf8',DB_USER,DB_PASS);

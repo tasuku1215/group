@@ -36,4 +36,5 @@ function login($id,$pass,$dbLink){
 function filePath($path){
   move_uploaded_file($_FILES['up_file']['tmp_name'],$path);
 }
+session_start();
 ?>

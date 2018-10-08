@@ -3,7 +3,7 @@
   require_once './../../config.php';
   // ファンクション呼び出し
   require_once './../../func/func.php';
-  session_start();
+  // session_start();
   session_delete();
   
   // echo substr(date('Y'),0,2);
