@@ -23,10 +23,10 @@ require_once './../../tpl/left_menu.html';
       <ul>
 <?php   foreach($video_list as $val){
           $video = $val;?>
-        <a href="">
+        <a href="../c__video-show/index.php?video_id=<?php echo $video['video_id'];?>">
           <li>
           <div class="img_absolute_position">
-            <img src="../../up_video/<?php echo $video['video_id'];?>.jpg" alt="動画アイコン">
+            <img src="../../up_videos/<?php echo $video['video_id'];?>.jpg" alt="動画アイコン">
           </div>
           <div class="video_detail">
             <div class="box_float">
