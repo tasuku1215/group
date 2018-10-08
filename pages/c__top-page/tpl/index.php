@@ -11,177 +11,38 @@ require_once './../../tpl/left_menu.html';
 
 ?>
 <div class="c__main">
-    <div id="top_contents">
+  <div id="top_contents">
     <div class="directory_box">
-            <a href="#" class="square_btn">TOPページ</a>
-            <div class="header_font">
-                <h2>TOPページ</h2>
-            </div>
-        </div>
-        <div id="top_box">
-            <!-- -->
-            <div class="top_video_list">
-                <ul>
-                    <a href="">
-                        <li >
-                            <div class="img_absolute_position">
-                                <img src="video_icon/i.jpg" alt="動画アイコン">
-                            </div>
-                            <div class="video_detail">
-                                <div class="box_float">
-                                    <h3>動画名 test_video</h3>
-                                    <img src="video_icon/i2.jpg" alt="投稿者アイコン">
-                                    <p>投稿者名 sample_user</p>
-                                </div>
-                                <p>お気に入り数/999</p>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="">
-                        <li>
-                            <div class="img_absolute_position">
-                                <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-                            </div>
-                            <div class="video_detail">
-                                <div class="box_float">
-                                    <h3>動画名 test_video</h3>
-                                    <img src="" alt="投稿者アイコン">
-                                    <p>投稿者名 sample_user</p>
-                                </div>
-                                <p>お気に入り数/999</p>
-                            </div>
-                    </li>
-                        </a>
-<a href="">
-    <li>
-        <div class="img_absolute_position">
-            <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-        </div>
-        <div class="video_detail">
-            <div class="box_float">
-                <h3>動画名 test_video</h3>
-                <img src="" alt="投稿者アイコン">
-                <p>投稿者名 sample_user</p>
-            </div>
-            <p>お気に入り数/999</p>
-        </div>
-    </li>
-</a>
-<a href="">
-    <li>
-        <div class="img_absolute_position">
-            <img src="video_icon/i.jpg" alt="動画アイコン">
-        </div>
-        <div class="video_detail">
-            <div class="box_float">
-                <h3>動画名 test_video</h3>
-                <img src="video_icon/i2.jpg" alt="投稿者アイコン">
-                <p>投稿者名 sample_user</p>
-            </div>
-            <p>お気に入り数/999</p>
-        </div>
-    </li>
-</a>
-<a href="">
-    <li>
-        <div class="img_absolute_position">
-            <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-        </div>
-        <div class="video_detail">
-            <div class="box_float">
-                <h3>動画名 test_video</h3>
-                <img src="" alt="投稿者アイコン">
-                <p>投稿者名 sample_user</p>
-            </div>
-            <p>お気に入り数/999</p>
-        </div>
-    </li>
-
-</a>
-<a href="">
-
-    <li>
-        <div class="img_absolute_position">
-            <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-        </div>
-        <div class="video_detail">
-            <div class="box_float">
-                <h3>動画名 test_video</h3>
-                <img src="" alt="投稿者アイコン">
-                <p>投稿者名 sample_user</p>
-            </div>
-            <p>お気に入り数/999</p>
-        </div>
-    </li>
-</a>
-<a href="">
-    <li>
-        <div class="img_absolute_position">
-            <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-        </div>
-        <div class="video_detail">
-            <div class="box_float">
-                <h3>動画名 test_video</h3>
-                <img src="" alt="投稿者アイコン">
-                <p>投稿者名 sample_user</p>
-            </div>
-            <p>お気に入り数/999</p>
-        </div>
-    </li>
-
-</a>
-<a href="">
-
-    <li>
-        <div class="img_absolute_position">
-            <img src="video_icon/i.jpg" alt="動画アイコン">
-        </div>
-        <div class="video_detail">
-            <div class="box_float">
-                <h3>動画名 test_video</h3>
-                <img src="" alt="投稿者アイコン">
-                <p>投稿者名 sample_user</p>
-            </div>
-            <p>お気に入り数/999</p>
-        </div>
-    </li>
-</a>
-<a href="">
-
-    <li>
-        <div class="img_absolute_position">
-            <img src="video_icon/i.jpg" alt="動画アイコン">
-        </div>
-        <div class="video_detail">
-            <div class="box_float">
-                <h3>動画名 test_video</h3>
-                <img src="" alt="投稿者アイコン">
-                <p>投稿者名 sample_user</p>
-            </div>
-            <p>お気に入り数/999</p>
-        </div>
-    </li>
-</a>
-<a href="">
-
-    <li>
-        <div class="img_absolute_position">
-            <img src="video_icon/i.jpg" alt="動画アイコン">
-        </div>
-        <div class="video_detail">
-            <div class="box_float">
-                <h3>動画名 test_video</h3>
-                <img src="" alt="投稿者アイコン">
-                <p>投稿者名 sample_user</p>
-            </div>
-            <p>お気に入り数/999</p>
-        </div>
-    </li>
-</a>
-                </ul>
-            </div>
-        </div>
+      <a href="#" class="square_btn">TOPページ</a>
+      <div class="header_font">
+        <h2>TOPページ</h2>
+      </div>
     </div>
+    <div id="top_box">
+      <div class="top_video_list">
+      <ul>
+<?php   foreach($video_list as $val){
+          $video = $val;?>
+        <a href="">
+          <li>
+          <div class="img_absolute_position">
+            <img src="../../up_video/<?php echo $video['video_id'];?>.jpg" alt="動画アイコン">
+          </div>
+          <div class="video_detail">
+            <div class="box_float">
+              <h3><?php echo $video['video_name'];?></h3>
+              <!-- <img src="video_icon/i2.jpg" alt="投稿者アイコン"> -->
+              <p><?php echo $video['user_id'];?></p>
+            </div>
+            <!--<p>お気に入り数/999</p>-->
+          </div>
+          </li>
+        </a>
+<?php   }?>
+      </ul>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- <a href="./pages/c__channel-page/index.php">c__channel-page</a>
     <br>
