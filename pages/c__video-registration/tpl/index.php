@@ -5,9 +5,9 @@
 //以下エラー文
 //
 //====================================================
-require_once "./../../tpl/header.html";
-require_once './../../tpl/main_up_menu.php';
-require_once './../../tpl/left_menu.html';
+// require_once "./../../tpl/header.html";
+// require_once './../../tpl/main_up_menu.php';
+// require_once './../../tpl/left_menu.html';
 
 ?>
 <div class="c__main">
@@ -20,7 +20,7 @@ require_once './../../tpl/left_menu.html';
      <h2>動画投稿</h2>
     </div>
    </div>
-  <form action="#">
+  <form action="./index.php" method="POST" enctype='multipart/form-data'>
       <table>
         <tr>
           <th class ="aline-middle" width="200" style="font-size : 20px;"><h3>投稿動画</h3></th>
@@ -34,7 +34,7 @@ require_once './../../tpl/left_menu.html';
             <!-- 金額設定 -->
             <div class="form-select">
             <select id="select-money" name="select-money">
-                <option value=""></option>
+                <!-- <option value=""></option> -->
                   <option value="money1">0</option>
                   <option value="money2" >500</option>
                   <option value="money3">1000</option>
@@ -50,10 +50,10 @@ require_once './../../tpl/left_menu.html';
             <!-- 公開範囲 -->
           <div class="form-select">
               <select id="select-release" name="select-release">
-                <option value=""></option>
-                  <option value="release1">自分だけ</option>
-                  <option value="release2" >一般</option>
-                  <option value="release3">会員</option>
+                <!-- <option value=""></option> -->
+                <!-- <option value="release2" >一般</option> -->
+                <option value="release3">誰でも</option>
+                <option value="release1">自分だけ</option>
               </select>
             </div>  
           </td>
@@ -82,6 +82,7 @@ require_once './../../tpl/left_menu.html';
         </tr>
       </table>
       <div id="upload_buttun">
+        <input type="submit">
         <button type="button" name="sned" value="" alt="OKボタン">
           <p size="5" >OK</p>
         </button>
