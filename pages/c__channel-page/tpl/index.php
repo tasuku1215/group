@@ -6,20 +6,20 @@
 //
 //====================================================
 require_once "./../../tpl/header.html";
-  require_once './../../tpl/main_up_menu.php';
-  require_once './../../tpl/left_menu.html';
+require_once './../../tpl/main_up_menu.php';
+require_once './../../tpl/left_menu.html';
 ?>
 <div class="c__main">
     <!-- head -->
     <div class="channel_box">
     <div class="header_box">
-        <div class="img_roundly">
+        <!-- <div class="img_roundly">
             <div><img src="" alt=""></div>
-        </div>
+        </div> -->
         <!-- 情報 -->
         <div class="user_detail">
-            <h2>ユーザー名</h2>
-            <p>動画数：999</p>
+            <h2><?php echo $_SESSION['login']['id'] ?></h2>
+            <!-- <p>動画数：999</p> -->
             
         </div>
     </div>
@@ -27,7 +27,7 @@ require_once "./../../tpl/header.html";
         <!-- 動画リスト -->
         <div class="video_list_contents">
             <h3> 投稿動画一覧</h3>
-            <div class="video_sort">
+            <!-- <div class="video_sort">
                 <select name="kibun">
                     <option value="1">再生回数の多い</option>
                     <option value="2">再生回数の少ない<option>
@@ -36,7 +36,7 @@ require_once "./../../tpl/header.html";
                     <option value="5">お気に入り数が多い</option>
                     <option value="6">お気に入り数が少ない</option>
                 </select>
-        </div>
+        </div> -->
             <div class="p_video_box">
                 <div class="back_grond">
                 </div>
