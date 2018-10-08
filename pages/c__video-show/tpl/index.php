@@ -5,7 +5,7 @@
 ?>
 <?php
 require_once "./../../tpl/header.html";
-require_once './../../tpl/main_up_menu.html';
+require_once './../../tpl/main_up_menu.php';
 require_once './../../tpl/left_menu.html';
 
 ?>

@@ -24,20 +24,19 @@ require_once './../../tpl/left_menu.html';
 
   <h2><a href="./"> 会員登録画面</a></h2>
   <div class="step1">
-    <form action="./index.php" method="GET">
+    <form action="./confirm.php" method="GET">
       <div class="step1-1">
-        <h3>コンテンツ内情報</h3>
+        <h3>入力内容の確認</h3>
         <!-- JSで隠す -->
-        <p>こちらの内容はコンテンツ内で利用する内容入力フォームになっております。<br>
-          IDとPASSはお客様でお控えいただきますようお願いいたします。</p>
+        <p>お間違えなければ登録ボタンを押してください</p>
         <table>
           <tr>
             <th>ID</th>
-            <td><input type="text" name="user_id" value=""></td>
+            <td><?php echo $_SESSION['register']['user_id']; ?></td>
           </tr>
           <tr>
             <th>PASS</th>
-            <td><input type="text" name="user_pass" value="pass"></td>
+            <td><?php echo $_SESSION['register']['user_pass']; ?></td>
           </tr>
         </table>
       </div>
@@ -70,7 +69,7 @@ require_once './../../tpl/left_menu.html';
                 </tr> -->
           <tr>
             <th>電話番号(ハイフン無し)</th>
-            <td><input type="text" name="user_tel" value="00099990000"></td>
+            <td><?php echo $_SESSION['register']['user_tel']; ?></td>
           </tr>
           <tr>
             <th>
@@ -78,7 +77,7 @@ require_once './../../tpl/left_menu.html';
               <!-- <br>メールアドレス確認 -->
             </th>
             <td>
-              <input type="text" name="user_mail" value="anpan@jam.com">
+            <?php echo $_SESSION['register']['user_mail']; ?>
             <!-- <br><input type="text" name="user_mail2" value=""> -->
           </td>
           </tr>
@@ -95,26 +94,25 @@ require_once './../../tpl/left_menu.html';
         <table>
           <tr>
             <th>名義人</th>
-            <td><input type="text" name="credit_user" value="MoritaYuushi">
+            <td><?php echo $_SESSION['register']['credit_user']; ?>
           </tr>
           <tr>
             <th>クレジットカード番号</th>
-            <td><input type="text" name="credit_no" value="00009999000099990000"></td>
+            <td><?php echo $_SESSION['register']['credit_no']; ?></td>
           </tr>
           <tr>
             <th>クレジットカードセキュリティーコード</th>
-            <td><input type="text" name="credit_code" value="999"><br>
+            <td><?php echo $_SESSION['register']['credit_code']; ?><br>
               カード裏面の下3桁のコード <br>
               (AMEXは表面のクレジットカード番号の右上4桁)</td>
           </tr>
           <tr>
             <th>クレジットカード有効期限(月/年4桁)</th>
-            <td><input type="text" name="credit_date" value="1299"></td>
+            <td><?php echo $credit_date; ?></td>
           </tr>
           <tr>
             <td></td>
-            <input type="hidden" name="state" value="entry">
-            <td><input type="submit" value="確認"></td>
+            <td><input type="submit" name="state" value="戻る">          <input type="submit" name="state" value="登録"></td>
             <!-- <td><button>確認</button></td> -->
           </tr>
         </table>
