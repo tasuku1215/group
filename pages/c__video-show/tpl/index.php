@@ -22,26 +22,24 @@ require_once './../../tpl/left_menu.html';
         <div class="p__viedo_show-main">
             <div class="p__video_center">
                 <video controls autoplay poster="video_icon/firstframe.jpg" width="750" height="400">
-                    <source src="video/sample.mp4">
-                    <source src="video/sample.ogv">
-                    <source src="video/sample.webm">
+                    <source src="../../up_videos/<?php echo $video_list[0]["video_id"] ?>.mp4">
                     <p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
                 </video>
             </div>
         </div>
         <!-- 再生動画情報 -->
         <div class="p__video_description">
-            <h2>動画名 aaaa_bbb</h2>
-            <img src="" alt="投稿者アイコン">
-            <h3>投稿者名 xxxxxxx</h3>
-            <h3>お気に入り数/999</h3>
-            <p>動画説明</p>
-            <p>カテゴリー/</p>
-            <p>タグ/</p>
+            <h2>動画名 <?php echo $video_list[0]["video_name"] ?></h2>
+            <img src="../../up_videos/<?php echo $video_list[0]["video_id"] ?>.jpg" alt="投稿者アイコン">
+            <h3>投稿者名 <?php echo $video_list[0]["user_id"] ?></h3>
+            <!-- <h3>お気に入り数/999</h3> -->
+            <p>動画説明<br><?php echo $video_list[0]["video_msg"] ?></p>
+            <!-- <p>カテゴリー/</p> -->
+            <!-- <p>タグ/</p> -->
         </div>
         <!-- 関連動画リスト 最大動画数：10動画-->
         <div class="p__video_list">
-            <ul>
+            <!-- <ul>
                 <a href="">
                     <li>
                         <div class="img_absolute_position">
@@ -57,143 +55,7 @@ require_once './../../tpl/left_menu.html';
                         </div>
                     </li>
                 </a>
-                <a href="">
-                    <li>
-                        <div class="img_absolute_position">
-                            <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-                        </div>
-                        <div class="video_detail">
-                            <div class="box_float">
-                                <h3>動画名 test_video</h3>
-                                <img src="" alt="投稿者アイコン">
-                                <p>投稿者名 sample_user</p>
-                            </div>
-                            <p>お気に入り数/999</p>
-                        </div>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <div class="img_absolute_position">
-                            <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-                        </div>
-                        <div class="video_detail">
-                            <div class="box_float">
-                                <h3>動画名 test_video</h3>
-                                <img src="" alt="投稿者アイコン">
-                                <p>投稿者名 sample_user</p>
-                            </div>
-                            <p>お気に入り数/999</p>
-                        </div>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <div class="img_absolute_position">
-                            <img src="video_icon/i.jpg" alt="動画アイコン">
-                        </div>
-                        <div class="video_detail">
-                            <div class="box_float">
-                                <h3>動画名 test_video</h3>
-                                <img src="" alt="投稿者アイコン">
-                                <p>投稿者名 sample_user</p>
-                            </div>
-                            <p>お気に入り数/999</p>
-                        </div>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <div class="img_absolute_position">
-                            <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-                        </div>
-                        <div class="video_detail">
-                            <div class="box_float">
-                                <h3>動画名 test_video</h3>
-                                <img src="" alt="投稿者アイコン">
-                                <p>投稿者名 sample_user</p>
-                            </div>
-                            <p>お気に入り数/999</p>
-                        </div>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <div class="img_absolute_position">
-                            <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-                        </div>
-                        <div class="video_detail">
-                            <div class="box_float">
-                                <h3>動画名 test_video</h3>
-                                <img src="" alt="投稿者アイコン">
-                                <p>投稿者名 sample_user</p>
-                            </div>
-                            <p>お気に入り数/999</p>
-                        </div>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <div class="img_absolute_position">
-                            <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-                        </div>
-                        <div class="video_detail">
-                            <div class="box_float">
-                                <h3>動画名 test_video</h3>
-                                <img src="" alt="投稿者アイコン">
-                                <p>投稿者名 sample_user</p>
-                            </div>
-                            <p>お気に入り数/999</p>
-                        </div>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <div class="img_absolute_position">
-                            <img src="video_icon/i.jpg" alt="動画アイコン">
-                        </div>
-                        <div class="video_detail">
-                            <div class="box_float">
-                                <h3>動画名 test_video</h3>
-                                <img src="" alt="投稿者アイコン">
-                                <p>投稿者名 sample_user</p>
-                            </div>
-                            <p>お気に入り数/999</p>
-                        </div>
-                    </li>
-                </a>
-                <a href="">
-
-                    <li>
-                        <div class="img_absolute_position">
-                            <img src="video_icon/firstframe.jpg" alt="動画アイコン">
-                        </div>
-                        <div class="video_detail">
-                            <div class="box_float">
-                                <h3>動画名 test_video</h3>
-                                <img src="" alt="投稿者アイコン">
-                                <p>投稿者名 sample_user</p>
-                            </div>
-                            <p>お気に入り数/999</p>
-                        </div>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        <div class="img_absolute_position">
-                            <img src="video_icon/i.jpg" alt="動画アイコン">
-                        </div>
-                        <div class="video_detail">
-                            <div class="box_float">
-                                <h3>動画名 test_video</h3>
-                                <img src="" alt="投稿者アイコン">
-                                <p>投稿者名 sample_user</p>
-                            </div>
-                            <p>お気に入り数/999</p>
-                        </div>
-                    </li>
-                </a>
-            </ul>
+            </ul> -->
         </div>
     </div>
 </div>

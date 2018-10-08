@@ -11,16 +11,16 @@
   
 
   $sql = "SELECT * FROM video WHERE video_id = ".$video_id;
-  var_dump($sql);
+  // var_dump($sql);
 
-
+  // $video_list=array();
   $result = mysqli_query($link , $sql);
   while($row = mysqli_fetch_assoc($result)){
     $video_list[] = $row; 
   }
 
-  var_dump($video_list);
   mysqli_close($link);
+  // var_dump($video_list);
 
 
   // テンプレート呼び出し
