@@ -6,9 +6,7 @@
 
 
   $link = mysqli_connect(HOST , DB_USER , DB_PASS , DB_NAME);
-  if(!$link){
-    exit;
-  }
+
   mysqli_set_charset($link , 'utf8');
   
 
@@ -16,9 +14,6 @@
 
 
   $result = mysqli_query($link , $sql);
-  if(!$result){
-    return $result;
-  }
 
   while($row = mysqli_fetch_assoc($result)){
     $video_list[] = $row; 

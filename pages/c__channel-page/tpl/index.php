@@ -44,19 +44,19 @@ require_once './../../tpl/left_menu.html';
                 <div class="p_video_list">
                     <ul>
                         <!--  -->
-                <?php for($i=0;$i<10;$i++){ ?>
-                        <a href="">
+                <?php foreach($video_list as $val){ ?>
+                        <a href="../c__video-show/index.php?video_id=<?php echo $val['video_id'] ?>">
                             <li>
                                 <div class="img_absolute_position">
-                                    <img src="video_icon/firstframe.jpg" alt="動画アイコン">
+                                    <img src="../../up_videos/<?php echo $val['video_id'] ?>.jpg" alt="動画アイコン">
                                 </div>
                                 <div class="video_detail">
                                     <div class="box_float">
-                                        <h3>動画名 test_video</h3>
-                                        <p>お気に入り数/999</p>
-                                        <button>
+                                        <h3>動画名 <?php echo $val['video_name'] ?></h3>
+                                        <!-- <p>お気に入り数/999</p> -->
+                                        <!-- <button>
                                         削除
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                             </li>
